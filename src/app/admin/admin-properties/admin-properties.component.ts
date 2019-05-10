@@ -37,7 +37,6 @@ export class AdminPropertiesComponent implements OnInit {
     const description = this.propertyForm.get('description').value;
     const newPropertiy = new Property(title,category,surface,rooms,description);
     this.propertiesService.createProperty(newPropertiy);
-    $
     $('#propertiesFormModal').modal('hide');
     this.propertyForm.reset();
   }
